@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--Velocio Factory 1.0-->
+<!--www.VelocioNetworks.com-->
+<VelocioNetworks>
+  <elementPageTag sAddress="vFactoryPage" sIndex="" dtAddress="UI16" bWholeArray="False" />
+  <Page Name="Home">
+    <Button height="1" width="5" x="2" y="4" myButtonType="Button" sRecipe="" sLabel="ST2 Finished">
+      <eButton sAddress="smartT2" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eValue sAddress="0" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </Button>
+    <DisplayNumber height="1" width="4" x="24" y="3" align="left" bDisplayAsTimer="False">
+      <eKeyNumber sAddress="mainState" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </DisplayNumber>
+    <Progress height="1" width="4" x="2" y="11">
+      <eKeyProgress sAddress="sensor2" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMax sAddress="1" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMin sAddress="0" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </Progress>
+    <Progress height="1" width="4" x="2" y="13">
+      <eKeyProgress sAddress="sensor3" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMax sAddress="1" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMin sAddress="0" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </Progress>
+    <Label height="1" width="4" x="9" y="9" myLableType="Label" sRecipe="" align="left" myColor="black" sText="Sensor 1" />
+    <Label height="1" width="4" x="9" y="11" myLableType="Label" sRecipe="" align="left" myColor="black" sText="Sensor 2" />
+    <Label height="1" width="4" x="9" y="13" myLableType="Label" sRecipe="" align="left" myColor="black" sText="Sensor 3" />
+    <Button height="1" width="4" x="18" y="4" myButtonType="Button" sRecipe="" sLabel="Stop">
+      <eButton sAddress="mainState" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eValue sAddress="0" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </Button>
+    <Button height="1" width="4" x="18" y="2" myButtonType="Button" sRecipe="" sLabel="Start">
+      <eButton sAddress="mainState" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eValue sAddress="1" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </Button>
+    <Button height="1" width="5" x="2" y="2" myButtonType="Button" sRecipe="" sLabel="ST1 Finished">
+      <eButton sAddress="smartT1" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eValue sAddress="0" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </Button>
+    <DisplayNumber height="1" width="4" x="10" y="2" align="left" bDisplayAsTimer="False">
+      <eKeyNumber sAddress="smartT1" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </DisplayNumber>
+    <DisplayNumber height="1" width="4" x="10" y="4" align="left" bDisplayAsTimer="False">
+      <eKeyNumber sAddress="smartT2" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </DisplayNumber>
+    <DisplayNumber height="1" width="4" x="10" y="6" align="left" bDisplayAsTimer="False">
+      <eKeyNumber sAddress="smartT3" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </DisplayNumber>
+    <Button height="1" width="5" x="2" y="6" myButtonType="Button" sRecipe="" sLabel="ST3 Finished">
+      <eButton sAddress="smartT3" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eValue sAddress="0" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </Button>
+    <Progress height="1" width="4" x="2" y="9">
+      <eKeyProgress sAddress="sensor1" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMax sAddress="1" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMin sAddress="0" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </Progress>
+  </Page>
+</VelocioNetworks>
