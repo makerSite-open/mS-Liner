@@ -29,10 +29,6 @@
     <start rung="0" row="3" column="4" cellsHeigh="-1" iSortedIndex="-1" />
     <coilCopy rung="0" row="7" column="3" cellsHeigh="3" iSortedIndex="0" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
-      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
-      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="i" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="Pulse" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="Delay" sIndex="" dtAddress="I32" />
     </coilCopy>
     <coilSet rung="0" row="12" column="4" cellsHeigh="-1" iSortedIndex="1">
@@ -58,21 +54,21 @@
       <eAddress1 sAddress="0" sIndex="" dtAddress="UI8" />
       <eAddress2 sAddress="Pulse" sIndex="" dtAddress="I32" />
     </Equal>
-    <Equal rung="0" row="30" column="4" cellsHeigh="-1" iSortedIndex="11">
+    <Equal rung="0" row="30" column="4" cellsHeigh="-1" iSortedIndex="10">
       <eAddress1 sAddress="1" sIndex="" dtAddress="UI8" />
       <eAddress2 sAddress="Pulse" sIndex="" dtAddress="I32" />
     </Equal>
     <coilSet rung="0" row="24" column="8" cellsHeigh="-1" iSortedIndex="5">
       <eAddress1 sAddress="pullPin" sIndex="" dtAddress="Bit" />
     </coilSet>
-    <coilReset rung="0" row="30" column="8" cellsHeigh="-1" iSortedIndex="12">
+    <coilReset rung="0" row="30" column="8" cellsHeigh="-1" iSortedIndex="11">
       <eAddress1 sAddress="pullPin" sIndex="" dtAddress="Bit" />
     </coilReset>
     <TimerCompare rung="0" row="24" column="13" cellsHeigh="-1" iSortedIndex="6" timerCompareType="GreaterOrEqual" timeUnit="ms">
       <eKeyTimerValue sAddress="myTimer" sIndex="" dtAddress="I32" />
       <eKeyDuration sAddress="Delay" sIndex="" dtAddress="I32" />
     </TimerCompare>
-    <TimerCompare rung="0" row="30" column="13" cellsHeigh="-1" iSortedIndex="13" timerCompareType="GreaterOrEqual" timeUnit="ms">
+    <TimerCompare rung="0" row="30" column="13" cellsHeigh="-1" iSortedIndex="12" timerCompareType="GreaterOrEqual" timeUnit="ms">
       <eKeyTimerValue sAddress="myTimer" sIndex="" dtAddress="I32" />
       <eKeyDuration sAddress="Delay" sIndex="" dtAddress="I32" />
     </TimerCompare>
@@ -80,33 +76,14 @@
       <eKeySource sAddress="1" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="Pulse" sIndex="" dtAddress="I32" />
     </coilCopy>
-    <coilCopy rung="0" row="30" column="17" cellsHeigh="3" iSortedIndex="14" CopyType="standard">
+    <coilCopy rung="0" row="30" column="17" cellsHeigh="3" iSortedIndex="13" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="Pulse" sIndex="" dtAddress="I32" />
     </coilCopy>
-    <coilCalc rung="0" row="30" column="23" cellsHeigh="3" iSortedIndex="15">
-      <eStoreIn sAddress="i" sIndex="" dtAddress="I32" />
-      <Equation>
-        <mathElement sAddress="i" sIndex="" dtAddress="I32" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="+" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
-      </Equation>
-    </coilCalc>
-    <NC rung="0" row="36" column="29" cellsHeigh="-1" iSortedIndex="9">
-      <eAddress1 sAddress="S1" sIndex="" dtAddress="Bit" />
-    </NC>
-    <NC rung="0" row="36" column="25" cellsHeigh="-1" iSortedIndex="16">
-      <eAddress1 sAddress="S2" sIndex="" dtAddress="Bit" />
-    </NC>
-    <NC rung="0" row="36" column="21" cellsHeigh="-1" iSortedIndex="18">
-      <eAddress1 sAddress="S3" sIndex="" dtAddress="Bit" />
-    </NC>
     <coilTimer rung="0" row="30" column="31" cellsHeigh="3" iSortedIndex="8" myType="Timer" myTimerCommand="Reset">
       <eKeyTimer sAddress="myTimer" sIndex="" dtAddress="I32" />
     </coilTimer>
-    <wireRouter rung="0" row="37" column="3" cellsHeigh="-1" iSortedIndex="-1" />
-    <coilReturn rung="0" row="42" column="25" cellsHeigh="-1" iSortedIndex="10" />
+    <coilReturn rung="0" row="35" column="31" cellsHeigh="-1" iSortedIndex="9" />
   </Cells>
   <FlowConnections>
     <FlowConn From="0" Yes="1" dirYesFrom="down" dirYesTo="up" />
@@ -120,14 +97,9 @@
     <FlowConn From="8" Yes="10" dirYesFrom="right" dirYesTo="left" />
     <FlowConn From="9" Yes="11" dirYesFrom="right" dirYesTo="left" No="7" dirNoFrom="down" dirNoTo="left" />
     <FlowConn From="10" Yes="12" dirYesFrom="right" dirYesTo="left" No="8" dirNoFrom="down" dirNoTo="left" />
-    <FlowConn From="11" Yes="17" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="11" Yes="13" dirYesFrom="right" dirYesTo="left" />
     <FlowConn From="12" Yes="13" dirYesFrom="right" dirYesTo="left" />
-    <FlowConn From="13" Yes="17" dirYesFrom="right" dirYesTo="left" />
-    <FlowConn From="14" Yes="19" dirYesFrom="down" dirYesTo="up" No="15" dirNoFrom="left" dirNoTo="up" />
-    <FlowConn From="15" Yes="19" dirYesFrom="down" dirYesTo="up" No="16" dirNoFrom="left" dirNoTo="up" />
-    <FlowConn From="16" Yes="19" dirYesFrom="down" dirYesTo="up" No="18" dirNoFrom="left" dirNoTo="right" />
-    <FlowConn From="17" Yes="14" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="18" Yes="5" dirYesFrom="up" dirYesTo="up" />
+    <FlowConn From="13" Yes="14" dirYesFrom="down" dirYesTo="up" />
   </FlowConnections>
   <Wires />
   <Comments />
