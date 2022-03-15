@@ -21,7 +21,7 @@
       <bStoreLocationOfTransition value="False" />
     </motionOut>
     <coilCopy rung="0" row="13" column="2" cellsHeigh="3" iSortedIndex="1" CopyType="standard">
-      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="smartT2" sIndex="" dtAddress="I32" />
     </coilCopy>
     <PWM rung="0" row="13" column="10" cellsHeigh="-1" iSortedIndex="2" myPWMType="SetPeriod" iDevice="0">

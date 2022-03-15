@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!--Velocio.net-->
 <!--vBuilder Project 1.0-->
-<Tree Default="Flow Chart" iProgramCheckSum="176250">
+<Tree Default="Flow Chart" iProgramCheckSum="230095">
   <leaf index="0" CANDataRate="rate1MBaud" Type="Ace 11" bEEPROM_CPU="True" sESub="Conveyor Robotv5.viof">
-    <SWTK iDebugRunningObject="0" iIndexOfFirstChar="6" iIndexOfFirstFloat="62" iIndexOfFirstPassByRef="62" iIndexOfFirstS16="14" iIndexOfFirstS32="14" iIndexOfFirstU16="6" iNumOf16BitWordsOfStackSpaceUsed="62" iObjectInstances="1" iSubDataBase="0" iUsedBits="15" iUsedChars="0" iUsedFloat="0" iUsedPassByRef="0" iUsedS16="0" iUsedS32="12" iUsedU16="4">
-      <linkedSub iCallStackCount="0" iCallStackCurrent="0" iCallStackFirst="0" iRungFirstIndex="0" iRungLastIndex="22" iSubNumber="0" iTagCount="49" iTagFirstIndex="1" />
+    <SWTK iDebugRunningObject="0" iIndexOfFirstChar="6" iIndexOfFirstFloat="66" iIndexOfFirstPassByRef="66" iIndexOfFirstS16="14" iIndexOfFirstS32="14" iIndexOfFirstU16="6" iNumOf16BitWordsOfStackSpaceUsed="66" iObjectInstances="1" iSubDataBase="0" iUsedBits="15" iUsedChars="0" iUsedFloat="0" iUsedPassByRef="0" iUsedS16="0" iUsedS32="13" iUsedU16="4">
+      <linkedSub iCallStackCount="0" iCallStackCurrent="0" iCallStackFirst="0" iRungFirstIndex="0" iRungLastIndex="22" iSubNumber="0" iTagCount="50" iTagFirstIndex="1" />
       <connectionProgramDetails Key="vFactoryPage" TagNumber="13" index="0" mask="65535" />
       <connectionProgramDetails Key="InBitC1" TagNumber="1" index="0" mask="1" />
       <connectionProgramDetails Key="InBitC2" TagNumber="2" index="0" mask="2" />
@@ -36,96 +36,130 @@
       <connectionProgramDetails Key="s1before" TagNumber="29" index="9" mask="65535" />
       <connectionProgramDetails Key="s2before" TagNumber="30" index="10" mask="65535" />
       <connectionProgramDetails Key="s3before" TagNumber="31" index="11" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_0" TagNumber="49" index="0" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_0" TagNumber="48" index="0" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_0" TagNumber="47" index="0" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_1" TagNumber="46" index="1" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_1" TagNumber="45" index="1" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_1" TagNumber="44" index="1" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_2" TagNumber="43" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_2" TagNumber="42" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_2" TagNumber="41" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_3" TagNumber="40" index="3" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_3" TagNumber="39" index="3" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_3" TagNumber="38" index="3" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_4" TagNumber="37" index="4" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_4" TagNumber="36" index="4" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_4" TagNumber="35" index="4" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_5" TagNumber="34" index="5" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_5" TagNumber="33" index="5" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="32" index="5" mask="65535" />
+      <connectionProgramDetails Key="Frequency" TagNumber="32" index="12" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_0" TagNumber="50" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_0" TagNumber="49" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_0" TagNumber="48" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_1" TagNumber="47" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_1" TagNumber="46" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_1" TagNumber="45" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_2" TagNumber="44" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_2" TagNumber="43" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_2" TagNumber="42" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_3" TagNumber="41" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_3" TagNumber="40" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_3" TagNumber="39" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_4" TagNumber="38" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_4" TagNumber="37" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_4" TagNumber="36" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_5" TagNumber="35" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_5" TagNumber="34" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="33" index="5" mask="65535" />
     </SWTK>
     <SWTK iDebugRunningObject="1" iIndexOfFirstChar="0" iIndexOfFirstFloat="0" iIndexOfFirstPassByRef="0" iIndexOfFirstS16="0" iIndexOfFirstS32="0" iIndexOfFirstU16="0" iNumOf16BitWordsOfStackSpaceUsed="24" iObjectInstances="1" iSubDataBase="0" iUsedBits="0" iUsedChars="0" iUsedFloat="0" iUsedPassByRef="3" iUsedS16="0" iUsedS32="0" iUsedU16="0">
-      <linkedSub iCallStackCount="1" iCallStackCurrent="0" iCallStackFirst="1" iRungFirstIndex="23" iRungLastIndex="29" iSubNumber="0" iTagCount="21" iTagFirstIndex="50" />
-      <connectionProgramDetails Key="smartT1" TagNumber="50" index="0" mask="65535" />
-      <connectionProgramDetails Key="PWM1" TagNumber="51" index="1" mask="65535" />
-      <connectionProgramDetails Key="PWM1pin" TagNumber="52" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_0" TagNumber="70" index="0" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_0" TagNumber="69" index="0" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_0" TagNumber="68" index="0" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_1" TagNumber="67" index="1" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_1" TagNumber="66" index="1" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_1" TagNumber="65" index="1" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_2" TagNumber="64" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_2" TagNumber="63" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_2" TagNumber="62" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_3" TagNumber="61" index="3" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_3" TagNumber="60" index="3" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_3" TagNumber="59" index="3" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_4" TagNumber="58" index="4" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_4" TagNumber="57" index="4" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_4" TagNumber="56" index="4" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_5" TagNumber="55" index="5" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_5" TagNumber="54" index="5" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="53" index="5" mask="65535" />
+      <linkedSub iCallStackCount="1" iCallStackCurrent="0" iCallStackFirst="1" iRungFirstIndex="23" iRungLastIndex="29" iSubNumber="0" iTagCount="21" iTagFirstIndex="51" />
+      <connectionProgramDetails Key="smartT1" TagNumber="51" index="0" mask="65535" />
+      <connectionProgramDetails Key="PWM1" TagNumber="52" index="1" mask="65535" />
+      <connectionProgramDetails Key="PWM1pin" TagNumber="53" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_0" TagNumber="71" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_0" TagNumber="70" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_0" TagNumber="69" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_1" TagNumber="68" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_1" TagNumber="67" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_1" TagNumber="66" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_2" TagNumber="65" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_2" TagNumber="64" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_2" TagNumber="63" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_3" TagNumber="62" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_3" TagNumber="61" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_3" TagNumber="60" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_4" TagNumber="59" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_4" TagNumber="58" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_4" TagNumber="57" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_5" TagNumber="56" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_5" TagNumber="55" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="54" index="5" mask="65535" />
     </SWTK>
     <SWTK iDebugRunningObject="1" iIndexOfFirstChar="0" iIndexOfFirstFloat="0" iIndexOfFirstPassByRef="0" iIndexOfFirstS16="0" iIndexOfFirstS32="0" iIndexOfFirstU16="0" iNumOf16BitWordsOfStackSpaceUsed="24" iObjectInstances="1" iSubDataBase="1" iUsedBits="0" iUsedChars="0" iUsedFloat="0" iUsedPassByRef="3" iUsedS16="0" iUsedS32="0" iUsedU16="0">
-      <linkedSub iCallStackCount="1" iCallStackCurrent="0" iCallStackFirst="2" iRungFirstIndex="30" iRungLastIndex="36" iSubNumber="1" iTagCount="21" iTagFirstIndex="71" />
-      <connectionProgramDetails Key="smartT2" TagNumber="71" index="0" mask="65535" />
-      <connectionProgramDetails Key="PWM2" TagNumber="72" index="1" mask="65535" />
-      <connectionProgramDetails Key="PWM2pin" TagNumber="73" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_0" TagNumber="91" index="0" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_0" TagNumber="90" index="0" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_0" TagNumber="89" index="0" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_1" TagNumber="88" index="1" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_1" TagNumber="87" index="1" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_1" TagNumber="86" index="1" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_2" TagNumber="85" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_2" TagNumber="84" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_2" TagNumber="83" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_3" TagNumber="82" index="3" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_3" TagNumber="81" index="3" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_3" TagNumber="80" index="3" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_4" TagNumber="79" index="4" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_4" TagNumber="78" index="4" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_4" TagNumber="77" index="4" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_5" TagNumber="76" index="5" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_5" TagNumber="75" index="5" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="74" index="5" mask="65535" />
+      <linkedSub iCallStackCount="1" iCallStackCurrent="0" iCallStackFirst="2" iRungFirstIndex="30" iRungLastIndex="36" iSubNumber="1" iTagCount="21" iTagFirstIndex="72" />
+      <connectionProgramDetails Key="smartT2" TagNumber="72" index="0" mask="65535" />
+      <connectionProgramDetails Key="PWM2" TagNumber="73" index="1" mask="65535" />
+      <connectionProgramDetails Key="PWM2pin" TagNumber="74" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_0" TagNumber="92" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_0" TagNumber="91" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_0" TagNumber="90" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_1" TagNumber="89" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_1" TagNumber="88" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_1" TagNumber="87" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_2" TagNumber="86" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_2" TagNumber="85" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_2" TagNumber="84" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_3" TagNumber="83" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_3" TagNumber="82" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_3" TagNumber="81" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_4" TagNumber="80" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_4" TagNumber="79" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_4" TagNumber="78" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_5" TagNumber="77" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_5" TagNumber="76" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="75" index="5" mask="65535" />
     </SWTK>
     <SWTK iDebugRunningObject="1" iIndexOfFirstChar="0" iIndexOfFirstFloat="0" iIndexOfFirstPassByRef="0" iIndexOfFirstS16="0" iIndexOfFirstS32="0" iIndexOfFirstU16="0" iNumOf16BitWordsOfStackSpaceUsed="24" iObjectInstances="1" iSubDataBase="2" iUsedBits="0" iUsedChars="0" iUsedFloat="0" iUsedPassByRef="3" iUsedS16="0" iUsedS32="0" iUsedU16="0">
-      <linkedSub iCallStackCount="1" iCallStackCurrent="0" iCallStackFirst="3" iRungFirstIndex="37" iRungLastIndex="43" iSubNumber="2" iTagCount="21" iTagFirstIndex="92" />
-      <connectionProgramDetails Key="smartT3" TagNumber="92" index="0" mask="65535" />
-      <connectionProgramDetails Key="PWM3" TagNumber="93" index="1" mask="65535" />
-      <connectionProgramDetails Key="PWM3pin" TagNumber="94" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_0" TagNumber="112" index="0" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_0" TagNumber="111" index="0" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_0" TagNumber="110" index="0" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_1" TagNumber="109" index="1" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_1" TagNumber="108" index="1" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_1" TagNumber="107" index="1" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_2" TagNumber="106" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_2" TagNumber="105" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_2" TagNumber="104" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_3" TagNumber="103" index="3" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_3" TagNumber="102" index="3" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_3" TagNumber="101" index="3" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_4" TagNumber="100" index="4" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_4" TagNumber="99" index="4" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_4" TagNumber="98" index="4" mask="65535" />
-      <connectionProgramDetails Key="VE_TempI32_5" TagNumber="97" index="5" mask="65535" />
-      <connectionProgramDetails Key="VE_TempFloat_5" TagNumber="96" index="5" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="95" index="5" mask="65535" />
+      <linkedSub iCallStackCount="1" iCallStackCurrent="0" iCallStackFirst="3" iRungFirstIndex="37" iRungLastIndex="43" iSubNumber="2" iTagCount="21" iTagFirstIndex="93" />
+      <connectionProgramDetails Key="smartT3" TagNumber="93" index="0" mask="65535" />
+      <connectionProgramDetails Key="PWM3" TagNumber="94" index="1" mask="65535" />
+      <connectionProgramDetails Key="PWM3pin" TagNumber="95" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_0" TagNumber="113" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_0" TagNumber="112" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_0" TagNumber="111" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_1" TagNumber="110" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_1" TagNumber="109" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_1" TagNumber="108" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_2" TagNumber="107" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_2" TagNumber="106" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_2" TagNumber="105" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_3" TagNumber="104" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_3" TagNumber="103" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_3" TagNumber="102" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_4" TagNumber="101" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_4" TagNumber="100" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_4" TagNumber="99" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_5" TagNumber="98" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_5" TagNumber="97" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="96" index="5" mask="65535" />
+    </SWTK>
+    <SWTK iDebugRunningObject="1" iIndexOfFirstChar="2" iIndexOfFirstFloat="18" iIndexOfFirstPassByRef="18" iIndexOfFirstS16="2" iIndexOfFirstS32="2" iIndexOfFirstU16="2" iNumOf16BitWordsOfStackSpaceUsed="66" iObjectInstances="1" iSubDataBase="3" iUsedBits="1" iUsedChars="0" iUsedFloat="0" iUsedPassByRef="6" iUsedS16="0" iUsedS32="4" iUsedU16="0">
+      <linkedSub iCallStackCount="1" iCallStackCurrent="0" iCallStackFirst="4" iRungFirstIndex="44" iRungLastIndex="63" iSubNumber="3" iTagCount="29" iTagFirstIndex="114" />
+      <PointerData iPtrIndex="1" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="myTimer" />
+      <connectionProgramDetails Key="i" TagNumber="114" index="0" mask="65535" />
+      <connectionProgramDetails Key="Pulse" TagNumber="115" index="1" mask="65535" />
+      <connectionProgramDetails Key="Delay" TagNumber="116" index="2" mask="65535" />
+      <connectionProgramDetails Key="dirPin" TagNumber="117" index="0" mask="65535" />
+      <connectionProgramDetails Key="Frequency" TagNumber="118" index="1" mask="65535" />
+      <connectionProgramDetails Key="myTimer" TagNumber="119" index="3" mask="65535" />
+      <connectionProgramDetails Key="pulsePin" TagNumber="120" index="0" mask="1" />
+      <connectionProgramDetails Key="S1" TagNumber="121" index="2" mask="65535" />
+      <connectionProgramDetails Key="S2" TagNumber="122" index="3" mask="65535" />
+      <connectionProgramDetails Key="S3" TagNumber="123" index="4" mask="65535" />
+      <connectionProgramDetails Key="pullPin" TagNumber="124" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_0" TagNumber="142" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_0" TagNumber="141" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_0" TagNumber="140" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_1" TagNumber="139" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_1" TagNumber="138" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_1" TagNumber="137" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_2" TagNumber="136" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_2" TagNumber="135" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_2" TagNumber="134" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_3" TagNumber="133" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_3" TagNumber="132" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_3" TagNumber="131" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_4" TagNumber="130" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_4" TagNumber="129" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_4" TagNumber="128" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_5" TagNumber="127" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_5" TagNumber="126" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="125" index="5" mask="65535" />
     </SWTK>
   </leaf>
 </Tree>
