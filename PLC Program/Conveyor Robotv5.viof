@@ -9,19 +9,18 @@
   <Subroutine Name="subFmove.viofs" iObjectInstances="1" />
   <Connections>
     <Connection sKey="vFactoryPage" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
-    <Connection sKey="InBitC1" iPort="2" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
-    <Connection sKey="InBitC2" iPort="2" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
-    <Connection sKey="InBitC3" iPort="2" iPin="3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="Sensor1" iPort="2" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="Sensor2" iPort="2" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="Sensor3" iPort="2" iPin="3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
     <Connection sKey="InBitC4" iPort="2" iPin="4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
     <Connection sKey="InBitC5" iPort="2" iPin="5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
     <Connection sKey="InBitC6" iPort="2" iPin="6" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
-    <Connection sKey="OutBitD1" iPort="3" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
-    <Connection sKey="OutBitD2" iPort="3" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="pullPin" iPort="3" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="dirPin" iPort="3" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
     <Connection sKey="OutBitD3" iPort="3" iPin="3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
     <Connection sKey="OutBitD4" iPort="3" iPin="4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
     <Connection sKey="OutBitD5" iPort="3" iPin="5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
     <Connection sKey="OutBitD6" iPort="3" iPin="6" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
-    <Connection sKey="roll" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
     <Connection sKey="mainState" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
     <Connection sKey="smartT1" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
     <Connection sKey="smartT2" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
@@ -32,13 +31,9 @@
     <Connection sKey="PWM1tag" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
     <Connection sKey="PWM3tag" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
     <Connection sKey="PWM3pinOutput" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
-    <Connection sKey="pos" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
-    <Connection sKey="sensor1" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
-    <Connection sKey="sensor2" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
-    <Connection sKey="sensor3" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
-    <Connection sKey="s1before" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
-    <Connection sKey="s2before" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
-    <Connection sKey="s3before" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="s1Before" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="s2Before" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="s3Before" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
     <Connection sKey="Frequency" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
   </Connections>
   <Modbus />
@@ -53,10 +48,10 @@
       <eAddress2 sAddress="mainState" sIndex="" dtAddress="I32" />
     </Equal>
     <NC rung="0" row="19" column="14" cellsHeigh="-1" iSortedIndex="4">
-      <eAddress1 sAddress="InBitC1" sIndex="" dtAddress="Bit" />
+      <eAddress1 sAddress="Sensor1" sIndex="" dtAddress="Bit" />
     </NC>
     <Equal rung="0" row="23" column="14" cellsHeigh="-1" iSortedIndex="5">
-      <eAddress1 sAddress="s1before" sIndex="" dtAddress="I32" />
+      <eAddress1 sAddress="s1Before" sIndex="" dtAddress="I32" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </Equal>
     <coilSubroutine rung="0" row="27" column="12" cellsHeigh="3" iSortedIndex="12" SubroutineName="subSensor1.viofs" bIsEmbeddedSub="false">
@@ -72,18 +67,18 @@
     </coilSubroutine>
     <coilCopy rung="0" row="31" column="13" cellsHeigh="3" iSortedIndex="13" CopyType="standard">
       <eKeySource sAddress="1" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="s1before" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="s1Before" sIndex="" dtAddress="I32" />
     </coilCopy>
     <coilCopy rung="0" row="19" column="17" cellsHeigh="3" iSortedIndex="11" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="s1before" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="s1Before" sIndex="" dtAddress="I32" />
     </coilCopy>
     <NC rung="0" row="19" column="25" cellsHeigh="-1" iSortedIndex="6">
-      <eAddress1 sAddress="InBitC2" sIndex="" dtAddress="Bit" />
+      <eAddress1 sAddress="Sensor2" sIndex="" dtAddress="Bit" />
     </NC>
     <wireRouter rung="0" row="20" column="22" cellsHeigh="-1" iSortedIndex="-1" />
     <Equal rung="0" row="23" column="25" cellsHeigh="-1" iSortedIndex="7">
-      <eAddress1 sAddress="s2before" sIndex="" dtAddress="I32" />
+      <eAddress1 sAddress="s2Before" sIndex="" dtAddress="I32" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </Equal>
     <coilSubroutine rung="0" row="27" column="23" cellsHeigh="3" iSortedIndex="15" SubroutineName="subSensor2.viofs" bIsEmbeddedSub="false">
@@ -99,18 +94,18 @@
     </coilSubroutine>
     <coilCopy rung="0" row="31" column="24" cellsHeigh="3" iSortedIndex="16" CopyType="standard">
       <eKeySource sAddress="1" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="s2before" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="s2Before" sIndex="" dtAddress="I32" />
     </coilCopy>
     <coilCopy rung="0" row="19" column="28" cellsHeigh="3" iSortedIndex="14" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="s2before" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="s2Before" sIndex="" dtAddress="I32" />
     </coilCopy>
     <NC rung="0" row="19" column="36" cellsHeigh="-1" iSortedIndex="8">
-      <eAddress1 sAddress="InBitC3" sIndex="" dtAddress="Bit" />
+      <eAddress1 sAddress="Sensor3" sIndex="" dtAddress="Bit" />
     </NC>
     <wireRouter rung="0" row="20" column="33" cellsHeigh="-1" iSortedIndex="-1" />
     <Equal rung="0" row="23" column="36" cellsHeigh="-1" iSortedIndex="9">
-      <eAddress1 sAddress="s3before" sIndex="" dtAddress="I32" />
+      <eAddress1 sAddress="s3Before" sIndex="" dtAddress="I32" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </Equal>
     <coilSubroutine rung="0" row="27" column="34" cellsHeigh="3" iSortedIndex="18" SubroutineName="subSensor3.viofs" bIsEmbeddedSub="false">
@@ -126,23 +121,23 @@
     </coilSubroutine>
     <coilCopy rung="0" row="31" column="35" cellsHeigh="3" iSortedIndex="19" CopyType="standard">
       <eKeySource sAddress="1" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="s3before" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="s3Before" sIndex="" dtAddress="I32" />
     </coilCopy>
     <coilCopy rung="0" row="19" column="39" cellsHeigh="3" iSortedIndex="17" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="s3before" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="s3Before" sIndex="" dtAddress="I32" />
     </coilCopy>
     <wireRouter rung="0" row="32" column="44" cellsHeigh="-1" iSortedIndex="-1" />
     <Equal rung="0" row="38" column="14" cellsHeigh="-1" iSortedIndex="10">
-      <eAddress1 sAddress="s1before" sIndex="" dtAddress="I32" />
+      <eAddress1 sAddress="s1Before" sIndex="" dtAddress="I32" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </Equal>
     <Equal rung="0" row="38" column="19" cellsHeigh="-1" iSortedIndex="20">
-      <eAddress1 sAddress="s2before" sIndex="" dtAddress="I32" />
+      <eAddress1 sAddress="s2Before" sIndex="" dtAddress="I32" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </Equal>
     <Equal rung="0" row="38" column="23" cellsHeigh="-1" iSortedIndex="21">
-      <eAddress1 sAddress="s3before" sIndex="" dtAddress="I32" />
+      <eAddress1 sAddress="s3Before" sIndex="" dtAddress="I32" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </Equal>
     <wireRouter rung="0" row="35" column="15" cellsHeigh="-1" iSortedIndex="-1" />
@@ -152,39 +147,33 @@
     <start rung="0" row="1" column="3" cellsHeigh="-1" iSortedIndex="-1" />
     <coilCopy rung="0" row="5" column="2" cellsHeigh="5" iSortedIndex="0" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
-      <eKeySource sAddress="InBitC1" sIndex="" dtAddress="Bit" />
-      <eKeySource sAddress="InBitC2" sIndex="" dtAddress="Bit" />
-      <eKeySource sAddress="InBitC3" sIndex="" dtAddress="Bit" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeySource sAddress="500" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="mainState" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="sensor1" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="sensor2" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="sensor3" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="s1before" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="s2before" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="s3before" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="s1Before" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="s2Before" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="s3Before" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="Frequency" sIndex="" dtAddress="I32" />
     </coilCopy>
     <coilSubroutine rung="0" row="18" column="7" cellsHeigh="5" iSortedIndex="3" SubroutineName="subFmove.viofs" bIsEmbeddedSub="false">
       <eLocal sAddress="Frequency" sIndex="" dtAddress="I32" />
       <eSub sAddress="Frequency" sIndex="" dtAddress="I32" />
       <bPassByRefOrFromEmbedded value="True" />
-      <eLocal sAddress="OutBitD2" sIndex="" dtAddress="Bit" />
+      <eLocal sAddress="dirPin" sIndex="" dtAddress="Bit" />
       <eSub sAddress="dirPin" sIndex="" dtAddress="Bit" />
       <bPassByRefOrFromEmbedded value="True" />
-      <eLocal sAddress="OutBitD1" sIndex="" dtAddress="Bit" />
+      <eLocal sAddress="pullPin" sIndex="" dtAddress="Bit" />
       <eSub sAddress="pullPin" sIndex="" dtAddress="Bit" />
       <bPassByRefOrFromEmbedded value="True" />
-      <eLocal sAddress="InBitC1" sIndex="" dtAddress="Bit" />
+      <eLocal sAddress="Sensor1" sIndex="" dtAddress="Bit" />
       <eSub sAddress="S1" sIndex="" dtAddress="Bit" />
       <bPassByRefOrFromEmbedded value="True" />
-      <eLocal sAddress="InBitC2" sIndex="" dtAddress="Bit" />
+      <eLocal sAddress="Sensor2" sIndex="" dtAddress="Bit" />
       <eSub sAddress="S2" sIndex="" dtAddress="Bit" />
       <bPassByRefOrFromEmbedded value="True" />
-      <eLocal sAddress="InBitC3" sIndex="" dtAddress="Bit" />
+      <eLocal sAddress="Sensor3" sIndex="" dtAddress="Bit" />
       <eSub sAddress="S3" sIndex="" dtAddress="Bit" />
       <bPassByRefOrFromEmbedded value="True" />
     </coilSubroutine>
