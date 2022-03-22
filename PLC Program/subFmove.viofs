@@ -10,20 +10,13 @@
     <Connection sKey="dirPin" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
     <Connection sKey="Frequency" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
     <Connection sKey="myTimer" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
-    <Connection sKey="pulsePin" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
-    <Connection sKey="S1" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
-    <Connection sKey="S2" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
-    <Connection sKey="S3" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
     <Connection sKey="pullPin" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
   </Connections>
   <Modbus />
-  <SubroutineInputs cellsHeigh="3">
+  <SubroutineInputs cellsHeigh="2">
     <Input sAddress="Frequency" sIndex="" dtAddress="I32" />
     <Input sAddress="dirPin" sIndex="" dtAddress="Bit" />
     <Input sAddress="pullPin" sIndex="" dtAddress="Bit" />
-    <Input sAddress="S1" sIndex="" dtAddress="Bit" />
-    <Input sAddress="S2" sIndex="" dtAddress="Bit" />
-    <Input sAddress="S3" sIndex="" dtAddress="Bit" />
   </SubroutineInputs>
   <Cells>
     <start rung="0" row="3" column="4" cellsHeigh="-1" iSortedIndex="-1" />

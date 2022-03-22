@@ -34,7 +34,7 @@
     <Connection sKey="s1Before" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
     <Connection sKey="s2Before" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
     <Connection sKey="s3Before" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
-    <Connection sKey="Frequency" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="Frequency" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
   </Connections>
   <Modbus />
   <SubroutineInputs cellsHeigh="0" />
@@ -157,7 +157,7 @@
       <eKeyDestination sAddress="s3Before" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="Frequency" sIndex="" dtAddress="I32" />
     </coilCopy>
-    <coilSubroutine rung="0" row="18" column="7" cellsHeigh="5" iSortedIndex="3" SubroutineName="subFmove.viofs" bIsEmbeddedSub="false">
+    <coilSubroutine rung="0" row="18" column="7" cellsHeigh="3" iSortedIndex="3" SubroutineName="subFmove.viofs" bIsEmbeddedSub="false">
       <eLocal sAddress="Frequency" sIndex="" dtAddress="I32" />
       <eSub sAddress="Frequency" sIndex="" dtAddress="I32" />
       <bPassByRefOrFromEmbedded value="True" />
@@ -166,15 +166,6 @@
       <bPassByRefOrFromEmbedded value="True" />
       <eLocal sAddress="pullPin" sIndex="" dtAddress="Bit" />
       <eSub sAddress="pullPin" sIndex="" dtAddress="Bit" />
-      <bPassByRefOrFromEmbedded value="True" />
-      <eLocal sAddress="Sensor1" sIndex="" dtAddress="Bit" />
-      <eSub sAddress="S1" sIndex="" dtAddress="Bit" />
-      <bPassByRefOrFromEmbedded value="True" />
-      <eLocal sAddress="Sensor2" sIndex="" dtAddress="Bit" />
-      <eSub sAddress="S2" sIndex="" dtAddress="Bit" />
-      <bPassByRefOrFromEmbedded value="True" />
-      <eLocal sAddress="Sensor3" sIndex="" dtAddress="Bit" />
-      <eSub sAddress="S3" sIndex="" dtAddress="Bit" />
       <bPassByRefOrFromEmbedded value="True" />
     </coilSubroutine>
   </Cells>
